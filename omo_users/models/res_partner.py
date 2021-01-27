@@ -28,7 +28,7 @@ class OmoUsers(models.Model):
             column2='user_id',
             string='Hubs')
     last_client_activity = fields.Datetime(string='Last Activity')
-    omo_type = fields.Selection([('none', 'None'), ('done', 'Done')])
+    omo_type = fields.Selection([('none', 'None'), ('done', 'Done')], string="OMO Type")
     related_company_id = fields.Many2one('res.company', string='Related Company')
     related_user_id = fields.Many2one('res.users', string='Related User')
     is_omo_client = fields.Boolean(string='Client')

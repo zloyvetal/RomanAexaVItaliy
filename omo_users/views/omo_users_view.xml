@@ -9,6 +9,19 @@
 		<field name="inherit_id" ref="base.view_partner_form"/>
 		<field name="arch" type="xml">
 			<!-- <xpath expr="//page[@name='device_description']" position='before'> -->
+			<xpath expr="//notebook" position="before">
+				<group>
+					<group>
+						<field name="related_company_id"/>
+						<field name="related_user_id"/>
+						<field name="is_omo_client"/>
+					</group>
+					<group>
+						<field name="last_client_activity"/>
+						<field name="omo_type"/>
+					</group>
+				</group>	
+			</xpath>
 			<xpath expr="//notebook" position="inside">
 				<page name="devices_ids" string="Devices">
 					<field name="devices_ids"/>
