@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem id="omo_network_management_menu"
+              name="Network management"/>
+
+
+    <menuitem id="omo_devices_main_menu"
+              name="Device"
+              parent="omo_network_management_menu"
+              sequence="10"/>
+
+    <menuitem id="omo_devices_template_menu"
+              name="Device template"
+              parent="omo_devices_main_menu"
+              action="omo_device.omo_device_template_action"
+              sequence="20"/>
+
+
+    <menuitem id="omo_devices_variant_menu"
+              name="Device variants"
+              action="omo_device.omo_device_variant_action"
+              parent="omo_devices_main_menu"
+              sequence="30"/>
+
+    <menuitem id="omo_devices_options_menu"
+              name="Options"
+              parent="omo_devices_main_menu"
+              sequence="40"/>
+
+
+    <menuitem id="omo_devices_type_menu"
+              name="Device type"
+              action="omo_device.omo_device_type_action"
+              parent="omo_devices_main_menu"
+              sequence="50"/>
+
+
+</odoo>

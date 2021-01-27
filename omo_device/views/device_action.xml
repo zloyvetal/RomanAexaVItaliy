@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        
+        <record id="omo_device_template_action" model="ir.actions.act_window">
+            <field name="name">omo.device.template</field>
+            <field name="res_model">product.template</field>
+            <field name="view_mode">kanban,form,tree</field>
+            <field name="domain">[('is_omo_device', "=", True)]</field>
+        </record>
+
+        <record id="omo_device_variant_action" model="ir.actions.act_window">
+            <field name="name">omo.device.variants</field>
+            <field name="res_model">product.product</field>
+            <field name="view_mode">form,tree</field>
+            <field name="domain">[('is_omo_device', "=", True)]</field>
+        </record>
+
+
+
+    </data>
+</odoo>

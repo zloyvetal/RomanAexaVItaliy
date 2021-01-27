@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="product_product_form_inherit" model="ir.ui.view">
+        <field name="name">omo.device.product.product.form.inherit</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='sale_ok']" position="before">
+                <div>
+                    <field name="is_omo_device"/>
+                    <label for="is_omo_device"/>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="product_product_tree_inherit" model="ir.ui.view">
+        <field name="name">omo.device.product.product.tree.inherit</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_product_tree_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="is_omo_device"/>
+            </xpath>
+        </field>
+    </record>
+
+
+
+</odoo>
