@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+omo_logs,access_omo_logs,model_omo_logs,base.group_user,1,1,1,1
+
+
+
+
