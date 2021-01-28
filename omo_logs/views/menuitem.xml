@@ -4,7 +4,7 @@
         <!-- This Menu Item must have a parent and an action -->
         <menuitem id="omo_logs_menu"
                   name="Logs"
-                  parent="omo_devices_options_menu"
+                  parent="omo_device.omo_devices_options_menu"
                   action="omo_logs_action"
                   />
     </data>

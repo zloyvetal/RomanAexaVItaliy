@@ -14,7 +14,7 @@
     'website': "https://omo.systems/",
     'category': 'IoT',
     'version': '1.0',
-    'depends': ['base', 'mail', 'web'],
+    'depends': ['base', 'mail', 'web', 'omo_device'],
 
     'data': [
         "security/ir.model.access.csv",

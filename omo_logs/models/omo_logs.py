@@ -18,3 +18,7 @@ class OmoLogs(models.Model):
     )
     timestamp = fields.Char(string="Timestamp")
     msg = fields.Text(string="Message")
+    device_id = fields.Many2one('stock.production.lot', string='Device')
+    hub_id = fields.Many2one('stock.production.lot', string='Parent device')
+    product_id = fields.Many2one('product.product', related='device_id.product_id', string='Product')
+    device_type = fields.Many2one('omo.device.type', related='device_id.device_type', string='Device type')

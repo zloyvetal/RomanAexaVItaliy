@@ -15,6 +15,10 @@
                             <field name="log_severity"/>
                             <field name="timestamp"/>
                             <field name="msg"/>
+                            <field name="device_id"/>
+                            <field name="device_type"/>
+                            <field name="product_id"/>
+                            <field name="hub_id"/>
                         </group>
                     </sheet>
                 </form>
