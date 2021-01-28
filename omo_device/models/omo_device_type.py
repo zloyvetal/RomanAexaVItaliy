@@ -1,7 +1,7 @@
 from odoo import fields, models, api
 
 
-class OmoDevice(models.Model):
+class OmoDeviceType(models.Model):
     _name = 'omo.device.type'
     _description = 'omo device type'
 
