@@ -15,8 +15,8 @@
         'views/product_product_inherit.xml',
         'views/product_template_inherit.xml',
         'views/device_action.xml',
+        'views/omo_device_type.xml',
         'views/device_menu.xml',
-        'views/omo_device_type.xml'
     ],
     # data files containing optionally loaded demonstration data
     'demo': [
