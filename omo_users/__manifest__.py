@@ -2,7 +2,7 @@
 # (C) 2020 OMO Systems (<"https://omo.systems/>)
 {
     "name": "OMO Users",
-    "summary": "Module for model omo_user",
+    "summary": "Module create a model of omo_user",
     "version": " 14.0.1",
     "category": "Uncategorized",
     'author': "OMO Systems",
@@ -28,5 +28,5 @@
     ],
     "application": True,
     "installable": True,
-    "autoinstall": False,
+    'auto_install': False,
 }

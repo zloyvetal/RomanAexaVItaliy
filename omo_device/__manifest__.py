@@ -1,9 +1,9 @@
 {
-    'name': "omo_device",
+    'name': "OMO Device",
     'version': '1.0',
     'depends': ['base', 'mail', 'uom', 'product'],
     'summary': """
-                This module create a library ticket""",
+                This module create a model of omo devices""",
     'author': "OMO Systems",
     'category': 'omo systems',
     'description': """

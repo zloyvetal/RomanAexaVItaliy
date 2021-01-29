@@ -9,4 +9,6 @@ class OmoUsersPartnerInherit(models.Model):
 
     _inherit = 'res.company'
 
-    omo_type = fields.Selection(related='partner_id.omo_type')
+    omo_type = fields.Selection([
+        ('provider', 'Provider'), ('osbb', 'OSBB')],
+        string="OMO Type")
