@@ -17,14 +17,16 @@
         'stock',
     ],
     "data": [
-        'views/omo_users_view.xml',
+        'views/res_partner_inherit.xml',
+        'views/res_users_inherit.xml',
+        'views/res_company_inherit.xml',
         'security/ir.model.access.csv',
     ],
     "demo": [
     ],
     "qweb": [
     ],
-    "application": False,
+    "application": True,
     "installable": True,
     "autoinstall": False,
 }

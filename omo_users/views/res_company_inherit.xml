@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<odoo>
+
+	<!-- INHERIT VIEWS -->
+
+	<record id="omo_company_inherit_form_view" model="ir.ui.view">
+		<field name="name">omo.company.inherit.form.view</field>
+		<field name="model">res.company</field>
+		<field name="inherit_id" ref="base.view_company_form"/>
+		<field name="arch" type="xml">
+			<!-- <xpath expr="//page[@name='device_description']" position='before'> -->
+			<xpath expr="//field[@name='name']" position="after">
+				<group>
+					<field name="omo_type"/>
+				</group>
+			</xpath>
+		</field>
+	</record>
+
+	<record id="omo_company_inherit_tree_view" model="ir.ui.view">
+		<field name="name">omo.users.inherit.form.view</field>
+		<field name="model">res.company</field>
+		<field name="inherit_id" ref="base.view_company_tree"/>
+		<field name="arch" type="xml">
+			<!-- <xpath expr="//page[@name='device_description']" position='before'> -->
+			<xpath expr="//field[@name='name']" position="after">
+				<field name="omo_type"/>
+			</xpath>
+		</field>
+	</record>
+
+
+	<!-- ACTIONS -->
+
+	<record id="omo_comany_action" model="ir.actions.act_window">
+		<field name="name">OMO Company</field>
+		<field name="res_model">res.company</field>
+		<field name="view_mode">tree,form</field>
+		<!-- <field name="domain">[('is_omo_client','=',True)]</field> -->
+	</record>
+
+</odoo>

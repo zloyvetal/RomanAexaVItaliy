@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<odoo>
+
+	<!-- INHERIT VIEWS -->
+
+	<record id="omo_users_users_inherit_form_view" model="ir.ui.view">
+		<field name="name">omo.users.inherit.form.view</field>
+		<field name="model">res.users</field>
+		<field name="inherit_id" ref="base.view_users_form"/>
+		<field name="arch" type="xml">
+			<!-- <xpath expr="//page[@name='device_description']" position='before'> -->
+			<xpath expr="//notebook" position="inside">
+				<page name="additional_info" string="Additional Info">
+					<group>
+						<field name="additional_info"/>
+					</group>
+				</page>
+				<page name="omo_parameters" string="OMO Parameters">
+					<group>
+						<field name="userid"/>
+						<field name="access_token"/>
+					</group>
+				</page>
+			</xpath>
+		</field>
+	</record>
+
+	<record id="omo_users_users_inherit_tree_view" model="ir.ui.view">
+		<field name="name">omo.users.inherit.form.view</field>
+		<field name="model">res.users</field>
+		<field name="inherit_id" ref="base.view_users_tree"/>
+		<field name="arch" type="xml">
+			<!-- <xpath expr="//page[@name='device_description']" position='before'> -->
+			<xpath expr="//field[@name='login']" position="after">
+				<field name="phone"/>
+				<field name="userid" invisible="1"/>
+			</xpath>
+		</field>
+	</record>
+
+
+	<!-- ACTIONS -->
+
+	<record id="omo_user_user_action" model="ir.actions.act_window">
+		<field name="name">OMO Users</field>
+		<field name="res_model">res.users</field>
+		<field name="view_mode">tree,form</field>
+		<!-- <field name="domain">[('is_omo_client','=',True)]</field> -->
+	</record>
+
+</odoo>
