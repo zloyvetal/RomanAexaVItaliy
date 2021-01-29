@@ -1,9 +1,9 @@
 {
     'name': "omo_device",
     'version': '1.0',
-    'depends': ['base', 'mail', 'uom', 'product'],
+    'depends': ['base', 'mail', 'uom', 'product', 'stock', 'omo_logs'],
     'summary': """
-                This module create a library ticket""",
+                All about OMO Devices """,
     'author': "OMO Systems",
     'category': 'omo systems',
     'description': """
@@ -17,6 +17,7 @@
         'views/device_action.xml',
         'views/omo_device_type.xml',
         'views/device_menu.xml',
+        'views/stock_production_lot_inherit.xml'
     ],
     # data files containing optionally loaded demonstration data
     'demo': [
