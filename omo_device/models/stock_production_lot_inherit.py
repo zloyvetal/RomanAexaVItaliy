@@ -21,4 +21,4 @@ class StockProductionLot(models.Model):
     omo_death_time = fields.Datetime(string="Death time")
     omo_deletion_time = fields.Datetime(string="Deleted")
     omo_last_activity_time = fields.Datetime(string="Last activity")
-    # log_ids = fields.One2many("stock.production.lot", "device_id", string="Logs")
+    log_ids = fields.One2many("omo.logs", "device_id", string="Logs")
