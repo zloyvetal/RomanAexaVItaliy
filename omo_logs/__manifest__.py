@@ -2,7 +2,7 @@
 # (C) 2021 OMO Systems (<"https://omo.systems/>)
 
 {
-    'name': "Omo Logs",
+    'name': "OMO Logs",
     'summary':  """
         Модуль для журналирования IoT устройств.
         Для более детальной информации посетите сайт.
@@ -24,7 +24,6 @@
         "views/menuitem.xml"
 
     ],
-
 
     'demo': [
     ],

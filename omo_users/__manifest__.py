@@ -2,7 +2,7 @@
 # (C) 2020 OMO Systems (<"https://omo.systems/>)
 {
     "name": "OMO Users",
-    "summary": "Module for model omo_user",
+    "summary": "Module create a model of omo_user",
     "version": " 14.0.1",
     "category": "Uncategorized",
     'author': "OMO Systems",
@@ -17,14 +17,16 @@
         'stock',
     ],
     "data": [
-        'views/omo_users_view.xml',
+        'views/res_partner_inherit.xml',
+        'views/res_users_inherit.xml',
+        'views/res_company_inherit.xml',
         'security/ir.model.access.csv',
     ],
     "demo": [
     ],
     "qweb": [
     ],
-    "application": False,
+    "application": True,
     "installable": True,
-    "autoinstall": False,
+    'auto_install': False,
 }
