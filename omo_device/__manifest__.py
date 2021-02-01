@@ -1,5 +1,5 @@
 {
-    'name': "omo_device",
+    'name': "OMO Device",
     'version': '1.0',
     'depends': ['base', 'stock', 'product'],
     'summary': """
@@ -17,7 +17,8 @@
         'views/device_action.xml',
         'views/omo_device_type.xml',
         'views/device_menu.xml',
-        'views/stock_production_lot_inherit.xml'
+        'views/stock_production_lot_inherit.xml',
+
     ],
     # data files containing optionally loaded demonstration data
     'demo': [
