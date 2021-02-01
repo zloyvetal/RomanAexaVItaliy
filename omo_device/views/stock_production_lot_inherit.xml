@@ -23,7 +23,6 @@
                     <field name="omo_death_time"/>
                     <field name="omo_deletion_time"/>
                     <field name="omo_last_activity_time"/>
-<!--                    <field name="log_ids"/>-->
                 </group>
             </xpath>
         </field>
