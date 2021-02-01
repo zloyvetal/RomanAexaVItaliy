@@ -1,7 +1,7 @@
 {
     'name': "omo_device",
     'version': '1.0',
-    'depends': ['base', 'mail', 'uom', 'product', 'stock', 'omo_logs'],
+    'depends': ['base', 'stock', 'product'],
     'summary': """
                 All about OMO Devices """,
     'author': "OMO Systems",
