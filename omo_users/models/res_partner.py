@@ -28,7 +28,7 @@ class OmoUsersPartnerInherit(models.Model):
             column2='user_id',
             string='Hubs')
     last_client_activity = fields.Datetime(string='Last Activity')
-    omo_type = fields.Selection(related='company_id.omo_type')
+    omo_type = fields.Selection(related='related_company_id.omo_type')
     # omo_type = fields.Selection([
     #     ('provider', 'Provider'), ('osbb', 'OSBB')],
     #     string="OMO Type")
