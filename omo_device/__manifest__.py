@@ -1,7 +1,7 @@
 {
     'name': "OMO Device",
     'version': '1.0',
-    'depends': ['base', 'mail', 'uom', 'product', 'stock', 'omo_logs'],
+    'depends': ['base', 'stock', 'product'],
     'summary': """
                 This module create a model of omo devices""",
     'author': "OMO Systems",
