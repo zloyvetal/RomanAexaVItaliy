@@ -1,7 +1,7 @@
 {
     'name': "OMO Device",
     'version': '1.0',
-    'depends': ['base', 'mail', 'uom', 'product'],
+    'depends': ['base', 'mail', 'uom', 'product', 'stock', 'omo_logs'],
     'summary': """
                 This module create a model of omo devices""",
     'author': "OMO Systems",
@@ -17,6 +17,7 @@
         'views/device_action.xml',
         'views/omo_device_type.xml',
         'views/device_menu.xml',
+        'views/stock_production_lot_inherit.xml'
     ],
     # data files containing optionally loaded demonstration data
     'demo': [
