@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="model_IMS" model="omo.device.type">
+            <field name="name">IMS</field>
+            <field name="code">ims</field>
+        </record>
+        <record id="model_WLS" model="omo.device.type">
+            <field name="name">WLS</field>
+            <field name="code">wls</field>
+        </record>
+        <record id="model_Button" model="omo.device.type">
+            <field name="name">Button</field>
+            <field name="code">btn</field>
+        </record>
+        <record id="model_DoorSensor" model="omo.device.type">
+            <field name="name">DoorSensor</field>
+            <field name="code">drsnsr</field>
+        </record>
+        <record id="model_THPS" model="omo.device.type">
+            <field name="name">THPS</field>
+            <field name="code">thps</field>
+        </record>
+        <record id="model_Alarm" model="omo.device.type">
+            <field name="name">Alarm</field>
+            <field name="code">lrm</field>
+        </record>
+        <record id="model_GasSensor" model="omo.device.type">
+            <field name="name">GasSensor</field>
+            <field name="code">gssnsr</field>
+        </record>
+        <record id="model_SmokeSensor" model="omo.device.type">
+            <field name="name">SmokeSensor</field>
+            <field name="code">smksnsr</field>
+        </record>
+        <record id="model_Intercom" model="omo.device.type">
+            <field name="name">Intercom</field>
+            <field name="code">vbrtnsnsr</field>
+        </record>
+        <record id="model_Outlet" model="omo.device.type">
+            <field name="name">Outlet</field>
+            <field name="code">tlt</field>
+        </record>
+        <record id="model_NFC" model="omo.device.type">
+            <field name="name">NFC</field>
+            <field name="code">nfc</field>
+        </record>
+        <record id="model_VibartionSensor" model="omo.device.type">
+            <field name="name">VibartionSensor</field>
+            <field name="code">vbrtnsnsr</field>
+        </record>
+        <record id="model_Smartlight_T" model="omo.device.type">
+            <field name="name">Smartlight_T</field>
+            <field name="code">smrtlght_t</field>
+        </record>
+        <record id="model_MultiChannelRele" model="omo.device.type">
+            <field name="name">MultiChannelRele</field>
+            <field name="code">mltchnnlrl</field>
+        </record>
+        <record id="model_Curtain" model="omo.device.type">
+            <field name="name">Curtain</field>
+            <field name="code">crtn</field>
+        </record>
+        <record id="model_SmartThermostat" model="omo.device.type">
+            <field name="name">SmartThermostat</field>
+            <field name="code">smrtthrmstt</field>
+        </record>
+        <record id="model_SmartLight_C" model="omo.device.type">
+            <field name="name">SmartLight_C</field>
+            <field name="code">smrtlght_c</field>
+        </record>
+        <record id="model_SmartLock" model="omo.device.type">
+            <field name="name">SmartLock</field>
+            <field name="code">smrtlck</field>
+        </record>
+        <record id="model_SmartLight" model="omo.device.type">
+            <field name="name">SmartLight</field>
+            <field name="code">smrtlght</field>
+        </record>
+        <record id="model_WSL" model="omo.device.type">
+            <field name="name">WSL</field>
+            <field name="code">wsl</field>
+        </record>
+        <record id="model_Dimmer" model="omo.device.type">
+            <field name="name">Dimmer</field>
+            <field name="code">dmmr</field>
+        </record>
+        <record id="model_waterValve" model="omo.device.type">
+            <field name="name">waterValve</field>
+            <field name="code">wtrvlv</field>
+        </record>
+        <record id="model_IAS" model="omo.device.type">
+            <field name="name">IAS</field>
+            <field name="code">ias</field>
+        </record>
+    </data>
+</odoo>

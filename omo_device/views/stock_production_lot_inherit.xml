@@ -6,24 +6,40 @@
         <field name="model">stock.production.lot</field>
         <field name="inherit_id" ref="stock.view_production_lot_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='company_id']" position="after">
+            <xpath expr="//notebook" position="before">
                 <group>
-                    <field name="is_omo_device"/>
-                    <field name="device_type"/>
-                    <field name="group_of_device"/>
-                    <field name="who_added"/>
-                    <field name="parent_id"/>
-                    <field name="child_id"/>
-                    <field name="address"/>
-                    <field name="is_alive"/>
-                    <field name="status"/>
-                    <field name="client_ids"/>
-                    <field name="info"/>
-                    <field name="omo_create_time"/>
-                    <field name="omo_death_time"/>
-                    <field name="omo_deletion_time"/>
-                    <field name="omo_last_activity_time"/>
+                    <group>
+                        <field name="device_type"/>
+                        <field name="group_of_device"/>
+                        <field name="who_added"/>
+                        <field name="parent_id"/>
+                        <field name="address"/>
+                        <field name="is_alive"/>
+                        <field name="is_omo_device"/>
+
+                    </group>
+                    <group>
+                        <field name="status"/>
+                        <field name="omo_create_time"/>
+                        <field name="omo_death_time"/>
+                        <field name="omo_deletion_time"/>
+                        <field name="omo_last_activity_time"/>
+                    </group>
                 </group>
+            </xpath>
+
+            <xpath expr="//notebook" position="inside">
+                <page name="info" string="Info">
+                    <field name="info"/>
+                </page>
+                <page name="Child id" string="Child id">
+                    <field name="child_id"/>
+                </page>
+                <page name="client ids" string="Clients">
+                    <field name="client_ids"/>
+                </page>
+
+
             </xpath>
         </field>
     </record>

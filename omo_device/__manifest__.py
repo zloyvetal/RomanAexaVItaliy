@@ -12,6 +12,7 @@
     # data files always loaded at installation
     'data': [
         'security/ir.model.access.csv',
+        'data/omo_data.xml',
         'views/product_product_inherit.xml',
         'views/product_template_inherit.xml',
         'views/device_action.xml',
